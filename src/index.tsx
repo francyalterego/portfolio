@@ -3,6 +3,7 @@ import "./index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Navbar from "./components/navbar";
+import AccessibilityWidget from "./components/accessibilityWidget";
 import "./assets/styles/App.scss";
 
 const rootElement = document.getElementById("root");
@@ -20,6 +21,7 @@ if (rootElement) {
           <Route path="*" element={<NoPage />} /> */}
         </Routes>
       </BrowserRouter>
+      <AccessibilityWidget />
     </div>
   );
 } else {

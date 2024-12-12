@@ -11,6 +11,7 @@ function Navbar() {
   const removeActive = () => {
     setIsActive(false);
   };
+
   return (
     <nav className={`navbar`}>
       <a href="#home" className={`logo`}>
